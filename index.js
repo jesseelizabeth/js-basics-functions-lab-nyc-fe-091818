@@ -14,5 +14,11 @@ function distanceFromHqInBlocks(currentBlock) {
 }
 
 function distanceFromHqInFeet(currentBlock) {
+  if (currentBlock > hq) {
+    return currentBlock - hq 
+  }
+  else {
+    return hq - currentBlock
+  }
   return currentBlock * 264
 }
