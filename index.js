@@ -35,6 +35,7 @@ function calculatesFarePrice (startingBlock, destinationBlock) {
   if (numberOfFeet <= 400) {
     return 0
   }
-  
+  else if (numberOfFeet > 400 && numberOfFeet <= 2000)
+    return numberOfFeet - 400 * 0.02
 }
 
