@@ -23,3 +23,10 @@ function distanceFromHqInFeet(currentBlock) {
   }
   return numberOfBlocks * feetInBlock
 }
+
+function distanceTravelledInFeet(block1, block2) {
+  const numberOfBlocks = Math.abs(block1 - block2)
+  return numberOfBlocks * feetInBlock
+}
+
+
