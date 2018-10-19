@@ -42,7 +42,7 @@ function calculatesFarePrice (startingBlock, destinationBlock) {
   else if (numberOfFeet > 2000 && numberOfFeet <= 2500) {
     return flatFare
   }
-  else if (numberOfFeet > 2500) {
+  else {
     return 'cannot travel that far'
   }
 }
