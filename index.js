@@ -29,4 +29,11 @@ function distanceTravelledInFeet(block1, block2) {
   return numberOfBlocks * feetInBlock
 }
 
+function calculatesFarePrice (block1, block2) {
+  const numberOfBlocks = Math.abs(block1 - block2)
+  if (numberOfBlocks < 400) {
+    return 0
+  }
+  if 
+}
 
