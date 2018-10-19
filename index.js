@@ -1,6 +1,7 @@
 // Code your solution in this file!
 const feetInBlock = 264
 const hq = 42
+const flatFare = 25
 
 // someValue = 43rd street
 // hq = 42nd street
@@ -35,7 +36,14 @@ function calculatesFarePrice (startingBlock, destinationBlock) {
   if (numberOfFeet <= 400) {
     return 0
   }
-  else if (numberOfFeet > 400 && numberOfFeet <= 2000)
+  else if (numberOfFeet > 400 && numberOfFeet <= 2000) {
     return (numberOfFeet - 400) * 0.02
+  }
+  else if (numberOfFeet > 2000 && numberOfFeet < 2500) {
+    return flatFare
+  }
+  else if (numberOfFeet > 2500) {
+    return 'cannot travel that far'
+  }
 }
 
